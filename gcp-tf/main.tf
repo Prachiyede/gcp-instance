@@ -1,7 +1,8 @@
 resource "google_compute_instance" "vm" {
-  name         = "jenkins-tf-vm"
-  machine_type = "e2-medium"
+  name         = "demo-vm"
+  project      = "ferrous-tine-460804-b6"
   zone         = "asia-south1-a"
+  machine_type = "e2-medium"
 
   boot_disk {
     initialize_params {
@@ -14,3 +15,5 @@ resource "google_compute_instance" "vm" {
     access_config {}
   }
 }
+
+
