@@ -1,6 +1,5 @@
 resource "google_compute_instance" "vm" {
-  name         = "demo-vm"
-  project      = "ferrous-tine-460804-b6"
+  name         = "gcp-instance"
   zone         = "asia-south1-a"
   machine_type = "e2-medium"
 
@@ -15,5 +14,6 @@ resource "google_compute_instance" "vm" {
     access_config {}
   }
 }
+
 
 
